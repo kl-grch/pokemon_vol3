@@ -1,0 +1,43 @@
+.header {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__logo {
+    width: 200px;
+    height: 100px;
+  }
+  &__links {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  &__search {
+    position: relative;
+    input {
+      padding: 10px;
+      height: 100%;
+      border-radius: 16px;
+      width: 300px;
+    }
+    .search {
+      &__items {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: white;
+        border: 1px solid var(--blue);
+        width: 100%;
+        position: absolute;
+        .items {
+          &__item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

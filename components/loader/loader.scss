@@ -1,0 +1,23 @@
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    animation-name: loader;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
